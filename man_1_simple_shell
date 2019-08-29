@@ -1,0 +1,47 @@
+
+.TH man 1 "28 August 2019" "1.0" "#cisfun-Lama6a~ Simple Shell(1) man page"
+.SH NAME
+hsh - Lama6a~$ Simple Shell
+.SH SYNOPSIS
+hsh (does not support arguments)
+	.SH Description
+	This is a simple command language interpreter capable of executing commands read from standard input.
+	.SH Overview
+	The shell is a program that reads lines from either a file or the terminal, interprets them, and  executes other commands. Commands can be typed directly to the running shell or can be piped in.
+	.SH Invocation
+	Typically the shell will be run in interactive mode where input is accepted from the keyboard.In non-interactive mode, the shell is run from a script or something similar.This subshell only opens when the script is executed and subsequently closes once the script is finished.
+	.SH RETURN VALUE
+	The shell returns the error code given by the last completed command followed by either ctrl-d or exit with no status code.
+	.SH SYNTAX
+Lama6a~$ <command> <flags or options> <argument 1> <argument 2> ...
+	OR NON-INTERACTIVE MODE:
+	$ <command> | ./hsh
+	.SS
+	Interactive mode:
+	.SS
+	EXAMPLE 1:
+Lama6a~$ /bin/ls
+	.SS
+	EXAMPLE 2:
+Lama6a~$$ ls -l
+	.SS
+	EXAMPLE 3:
+Lama6a~$$ cat textfile
+	.SS
+	Non-interactive mode:
+	.SS
+	EXAMPLE 1:
+	$ echo "ls -l" | ./hsh
+	.SH BUILTIN COMMANDS
+	.SS cd
+	- change directory
+	.SS exit
+	- exit the shell
+	.SS help
+	- display help for a builtin command
+	.SH SEE ALSO
+	DASH(1)
+	.SH BUGS
+	No known bugs
+	.SH AUTHORS
+	Monica Jaimes Caicedo
