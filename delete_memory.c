@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
  * delete_memory - delete memory in double pointer
- * @table: double pointer
+ * @value: double pointer
  * @ptr: size free
  */
 void delete_memory(char **ptr, int value)
