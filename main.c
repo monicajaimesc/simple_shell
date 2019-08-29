@@ -22,13 +22,15 @@ int main(void)
 /*Run process 2. command loop*/
 	/*just the kernel process is running until no -system call yet*/
 	/*Run command loop*/
-	while (EOF)
+	while (EOF)/*end of a file */
 	{
 		/* print prompt */
-		/* if (isatty(fileno(stdin))) */
+		/* int isatty(int fd) */
 		if (isatty(STDIN_FILENO))
 			write(1, "#cisfun-Lama6a~$ ", 10);
+/*reads an entire line from stream, store it in bufsize and thext is stdin*/
 		buffer = read_input();
+/*getline was no succesfull, function failed*/
 		if (buffer == NULL)
 		{
 			if (isatty(STDIN_FILENO))
@@ -38,6 +40,8 @@ int main(void)
 
 		else
 		{
+/*1 identifier when we turn on pc*/
+/*2 & 3. identifier, argv & argc*/
 			args = break_line(buffer);
 			execute(args.argv, head);
 /*shutdown-cleanup*/
