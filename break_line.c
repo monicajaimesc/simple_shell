@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * split_line - Generate argv vector
+ * break_line - Generate argv vector
  *@buf: Line to be splitted
  * Return: double pointer char
  */

@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * *read_line - read line for stdin
+ * *read_input - read line for stdin
  * Return: Success or Fail
  */
 char *read_input(void)

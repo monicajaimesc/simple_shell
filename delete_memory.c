@@ -2,7 +2,7 @@
 /**
  * delete_memory - delete memory in double pointer
  * @table: double pointer
- * @value: size free
+ * @ptr: size free
  */
 void delete_memory(char **ptr, int value)
 {

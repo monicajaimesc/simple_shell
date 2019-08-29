@@ -60,7 +60,6 @@ path_t *add_node(path_t **head, char *str)
 /**
  * *create_node - create a node
  * @data: data from create
- * @separator: delimiter inside data
  * Return: new node
  */
 path_t *create_node(char *data)
