@@ -1,10 +1,14 @@
 #include "shell.h"
 
 /**
- * main - create shell
- *
- * Return: Success or Fail
+ *main - programate that emulates the lifetime of a shell
+ *Return: Integer result, 0 for sucess besides is an error
  */
+
+/*simpleshell: analizar la linea de comando to build the argv data structure*/
+/* 1.identifier:2.identifier:3.identifier]]*)*/
+/* result 1:PATH=usr/bin/ls */
+/* resutl 2: length array, argv*/
 
 int main(void)
 {
@@ -15,13 +19,15 @@ int main(void)
 
 	getenviron = _getenv("PATH");
 	head = create_node(getenviron);
-
+/*Run process 2. command loop*/
+	/*just the kernel process is running until no -system call yet*/
+	/*Run command loop*/
 	while (EOF)
 	{
 		/* print prompt */
 		/* if (isatty(fileno(stdin))) */
 		if (isatty(STDIN_FILENO))
-			write(1, "#cisfun$ ", 10);
+			write(1, "#cisfun-Lama6a~$ ", 10);
 		buffer = read_input();
 		if (buffer == NULL)
 		{
@@ -34,6 +40,7 @@ int main(void)
 		{
 			args = break_line(buffer);
 			execute(args.argv, head);
+/*shutdown-cleanup*/
 			delete_memory(args.argv, args.argc);
 			free(buffer);
 		}
