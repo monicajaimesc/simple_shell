@@ -27,7 +27,7 @@ int main(void)
 		/* print prompt */
 		/* int isatty(int fd) */
 		if (isatty(STDIN_FILENO))
-			write(1, "#cisfun-Lama6a~$ ", 10);
+			write(1, "Lama6a~$ ", 10);
 /*reads an entire line from stream, store it in bufsize and thext is stdin*/
 		buffer = read_input();
 /*getline was no succesfull, function failed*/

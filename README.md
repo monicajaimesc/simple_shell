@@ -1,10 +1,14 @@
 # #cisfun-Lama6a~$ Simple Shell
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/iqPq967"><a href="//imgur.com/a/iqPq967"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 This repo has our custom shell project, which attempts to replicate some of the processes of the 'sh' shell or 'bash' shell. For more on the processes of #cisfun-Lama6a~$, please reference our blog post here:
 ## Synopsis
-Built and tested in the Ubuntu 14.04 LTS via Vagrant in VirtualBox and compiled with GCC version 4.8.4. #cisfun-Lama6a~$ Simple Shell integrates commands located in the system's PATH with custom built-in commands, and also functionality from bash standard commands.
+Built and tested in the Ubuntu 14.04 LTS via Vagrant in VirtualBox and compiled with GCC version 4.8.4. Lama6a~$ Simple Shell integrates commands located in the system's PATH with custom built-in commands, and also functionality from bash standard commands.
 ## Quick Start
    Git clone all this respository to your local directory.
    $ git clone https://github.com/monicajaimesc/simple_shell.git
+
       Compile the program.
       $ make all
          Execute the shell.
@@ -35,22 +39,19 @@ Built and tested in the Ubuntu 14.04 LTS via Vagrant in VirtualBox and compiled 
 	 | File | Description |
 	 | :-:  | :-: |
 	 | AUTHORS | Contributors list to this project |
-	 |0-array's_helpers1.c |Contains several arrays helpers functions|
-	 |0-array's_helpers2.c |Contains several arrays helpers functions|
-	 |1.1-loop.c| Loop of main routine |
-	 |1.1.1.get-line.c| Get a line fron stdin |
-	 |1.1.2.stortk.c| Tokenize a command line |
-	 |1.1.3.system-call.c | System |
-	 |3_a_readline.c|  |
-	 |3_b_splitline.c | |
-	 |3_c_execute.c|  |
-	 |execute_argv.c|  |
-	 |launch_argv.c|  |
-	 |main.c|  |
+	 |strcat.c |Contains several arrays helpers functions|
+	 |strcmp.c |Contains several arrays helpers functions|
+	 |strcpy.c | Loop of main routine |
+	 |strlen.c | Get a line fron stdin |
+	 |read_input.c | Tokenize a command line |
+	 |main.c | |
+	 |getenv.c| get environmet for the string  |
+	 |delete_memory.c | delete memory in double pointer |
+	 |create_node.c | creat a node for the path |
+	 |command_execute.c| execute my path structure |
+	 |calloc.c| create memory space |
+	 |break_line.c| break the string for torkenize process |
 	 |man_1_simple_shell|Simple shell man page|
-	 |memory1_construction.c| Functions related to dynamic memory |
-	 |memory2_free.c| |
-	 |new_argv.c| |
 	 |shell.h|Include all the headers files|
 ### Authors
 	 Monica Jaimes Caicedo
